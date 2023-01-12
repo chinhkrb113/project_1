@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.pms.view.staff.HistoryDetailForm">
+   <children>
+      <GridPane layoutX="38.0" layoutY="36.0" prefHeight="438.0" prefWidth="583.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="390.1999755859375" minWidth="10.0" prefWidth="272.40001220703124" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="311.2000122070313" minWidth="0.0" prefWidth="40.00001220703126" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="425.1999755859375" minWidth="10.0" prefWidth="271.9999877929687" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="188.0000244140625" minHeight="10.0" prefHeight="188.0000244140625" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="141.60001220703126" minHeight="10.0" prefHeight="60.79997558593752" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="281.59998168945316" minHeight="10.0" prefHeight="190.40001831054693" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="iv_lp_in" fitHeight="167.0" fitWidth="236.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="iv_in" fitHeight="183.0" fitWidth="247.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+            <ImageView fx:id="iv_lp_out" fitHeight="167.0" fitWidth="245.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="306.0" text="In" textAlignment="CENTER" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="298.0" text="Out" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ImageView fx:id="iv_out" fitHeight="180.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="btClose" layoutX="286.0" layoutY="474.0" mnemonicParsing="false" onAction="#btCloseAction" prefHeight="40.0" prefWidth="80.0" text="Close" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="209.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.pms.view.admin.Statistic">
+   <children>
+      <Label layoutX="62.0" layoutY="14.0" text="Welcome to Statistic center" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btNoVehicle" layoutX="63.0" layoutY="78.0" mnemonicParsing="false" onAction="#btNoVehicleAction" prefHeight="40.0" prefWidth="80.0" text="No. Vehicle" />
+      <Button fx:id="btRevenue" layoutX="216.0" layoutY="78.0" mnemonicParsing="false" onAction="#btRevenueAction" prefHeight="40.0" prefWidth="80.0" text="Revenue" />
+      <Button fx:id="btSuspectVehicle" layoutX="63.0" layoutY="144.0" mnemonicParsing="false" onAction="#btSuspectVehicleAction" prefHeight="40.0" prefWidth="80.0" text="Suspect &#10;Vehicle" textAlignment="CENTER" />
+      <Button fx:id="btBack" layoutX="216.0" layoutY="144.0" mnemonicParsing="false" onAction="#btBackAction" prefHeight="40.0" prefWidth="80.0" text="Back" textFill="#739f04" />
+   </children>
+</AnchorPane>

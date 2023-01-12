@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.pms.view.sadmin.AddAdminForm">
+   <children>
+      <TextField fx:id="tfName" layoutX="99.0" layoutY="72.0" prefHeight="26.0" prefWidth="260.0" promptText="Nguyen Van A">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboGender" layoutX="422.0" layoutY="72.0" prefHeight="26.0" prefWidth="90.0" />
+      <DatePicker fx:id="datePicker" layoutX="99.0" layoutY="116.0" prefHeight="26.0" prefWidth="162.0" promptText="dd/MM/yyyy" />
+      <Label layoutX="374.0" layoutY="119.0" text="Role" />
+      <ComboBox fx:id="comboRole" disable="true" layoutX="422.0" layoutY="115.0" prefHeight="26.0" prefWidth="90.0" />
+      <TextField fx:id="tfPhone" layoutX="99.0" layoutY="154.0" promptText="0123456789">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfEmail" layoutX="99.0" layoutY="197.0" promptText="abc@xyz.com">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfAddress" layoutX="99.0" layoutY="239.0" prefHeight="30.0" prefWidth="412.0" promptText="No.1 Dai Co Viet">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="17.0" layoutY="42.0" text="Personal Information">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="78.0" text="Full name" />
+      <Label layoutX="374.0" layoutY="77.0" text="Gender" />
+      <Label layoutX="17.0" layoutY="120.0" text="Date of Birth" />
+      <Label layoutX="17.0" layoutY="160.0" text="Cellphone" />
+      <Label layoutX="17.0" layoutY="203.0" text="Email" />
+      <Label layoutX="17.0" layoutY="245.0" text="Address" />
+      <ComboBox fx:id="comboCompany" layoutX="99.0" layoutY="281.0" prefHeight="26.0" prefWidth="412.0" />
+      <ComboBox fx:id="comboParking" disable="true" layoutX="99.0" layoutY="318.0" prefHeight="26.0" prefWidth="412.0" />
+      <Label layoutX="197.0" layoutY="14.0" text="REGISTER ADMIN" textAlignment="CENTER" textFill="#f57a1d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="394.20001220703125" layoutX="117.0" layoutY="364.0" startX="-97.80000305175781" />
+      <Label layoutX="20.0" layoutY="378.0" text="Account Information">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="19.0" layoutY="409.0" text="Username" />
+      <TextField fx:id="tfUsername" layoutX="99.0" layoutY="405.0" prefHeight="30.0" prefWidth="260.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pfPassword" layoutX="99.0" layoutY="442.0" prefHeight="30.0" prefWidth="260.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="20.0" layoutY="446.0" text="Password" />
+      <Button fx:id="btAdd" layoutX="99.0" layoutY="519.0" mnemonicParsing="false" onAction="#btAddAction" prefHeight="30.0" prefWidth="90.0" text="ADD" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btClear" layoutX="229.0" layoutY="519.0" mnemonicParsing="false" onAction="#btClearAction" prefHeight="30.0" prefWidth="90.0" text="CLEAR">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btClose" layoutX="359.0" layoutY="519.0" mnemonicParsing="false" onAction="#btCloseAction" prefHeight="30.0" prefWidth="90.0" text="Close" textFill="#ff0101">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="17.0" layoutY="285.0" text="Compary" />
+      <Label layoutX="17.0" layoutY="322.0" text="Parking" />
+      <Label fx:id="labelNotice" layoutX="99.0" layoutY="488.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

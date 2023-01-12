@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.pms.view.admin.AdminCenterForm">
+   <children>
+      <Label layoutX="24.0" layoutY="22.0" text="Welcome to Admin Center">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbWelcome" layoutX="24.0" layoutY="57.0" prefHeight="20.0" prefWidth="225.0" text="Hello Admin">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btLogout" layoutX="429.0" layoutY="20.0" mnemonicParsing="false" onAction="#btLogoutAction" prefWidth="80.0" text="Logout" textFill="#f00303" />
+      <Label layoutX="24.0" layoutY="95.0" text="Company" />
+      <Label fx:id="lbCompany" layoutX="146.0" layoutY="95.0" text="com" />
+      <Label disable="true" layoutX="24.0" layoutY="122.0" text="Parking" />
+      <Label fx:id="lbParking" disable="true" layoutX="146.0" layoutY="122.0" text="park" />
+      <Label layoutX="24.0" layoutY="155.0" text="Number of Staffs" />
+      <Label fx:id="lbNumberOfStaff" layoutX="148.0" layoutY="155.0" text="noS" textFill="#1848cd" />
+      <Label layoutX="24.0" layoutY="189.0" text="Number of Parkings" />
+      <Label fx:id="lbNumberOfParking" layoutX="148.0" layoutY="189.0" text="noP" textFill="#0400ff" />
+      <Button fx:id="btViewStaff" layoutX="429.0" layoutY="95.0" mnemonicParsing="false" onAction="#btViewStaffAction" prefHeight="50.0" prefWidth="80.0" text="View Staff" textAlignment="CENTER" />
+      <Button fx:id="btViewParking" layoutX="429.0" layoutY="155.0" mnemonicParsing="false" onAction="#btViewParkingAction" prefHeight="50.0" prefWidth="80.0" text="View &#10;Parking&#10;" textAlignment="CENTER" />
+      <Button fx:id="btStatistic" layoutX="429.0" layoutY="216.0" mnemonicParsing="false" onAction="#btStatisticAction" prefHeight="50.0" prefWidth="80.0" text="Statistic" />
+      <Button fx:id="btFee" layoutX="429.0" layoutY="276.0" mnemonicParsing="false" onAction="#btFeeAction" prefHeight="50.0" prefWidth="80.0" text="Change Fee" />
+      <Line endX="339.5999755859375" endY="-7.62939453125E-6" layoutX="182.0" layoutY="85.0" startX="-157.19998168945312" startY="-7.62939453125E-6" />
+      <Line endX="109.7911148071289" endY="13.157236099243164" layoutX="403.0" layoutY="187.0" rotate="90.0" startX="-120.90477752685547" startY="13.607301712036133" />
+   </children>
+</AnchorPane>

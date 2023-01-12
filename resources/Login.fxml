@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.pms.view.LoginForm">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="60.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to&#10;PARKING MANAGEMENT&#10;System" wrappingWidth="180.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Line endX="135.60000610351562" endY="7.62939453125E-6" layoutX="120.0" layoutY="82.0" startX="-74.8000259399414" startY="7.62939453125E-6" />
+      <Text layoutX="58.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please sign in" />
+      <Text fill="RED" layoutX="56.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you lost or forget password, &#10;contact with admin or 0123123123">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="52.0" layoutY="125.0" prefHeight="95.0" prefWidth="198.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="tfUsername" prefHeight="30.0" prefWidth="187.0" promptText="Username" />
+            <PasswordField fx:id="tfPassword" prefHeight="30.0" prefWidth="187.0" promptText="Password" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Label fx:id="labelNotice" layoutX="11.0" layoutY="220.0" prefHeight="18.0" prefWidth="279.0" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Button fx:id="loginButton" defaultButton="true" layoutX="58.0" layoutY="250.0" mnemonicParsing="false" onAction="#loginActionButton" prefHeight="40.0" prefWidth="80.0" text="Login" />
+      <Button fx:id="closeButton" layoutX="164.0" layoutY="250.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="40.0" prefWidth="80.0" text="Close" />
+   </children>
+</AnchorPane>

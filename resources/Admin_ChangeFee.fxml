@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="276.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.pms.view.admin.ChangeFeeForm">
+   <children>
+      <Label layoutX="169.0" layoutY="27.0" text="Change Parking Fee">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="40.0" layoutY="56.0" prefHeight="166.0" prefWidth="395.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.199951171875" minWidth="10.0" prefWidth="163.00003662109376" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.0" minWidth="10.0" prefWidth="231.7999633789062" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Motorcycle Daily Fee" />
+            <Label text="Car, small truck Daily Fee" GridPane.rowIndex="2" />
+            <TextField fx:id="tfMotorcycleFee" prefHeight="26.0" prefWidth="259.0" GridPane.columnIndex="1" />
+            <TextField fx:id="tfOtherFee" prefHeight="26.0" prefWidth="259.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Motorcycle Month Fee" GridPane.rowIndex="1" />
+            <TextField fx:id="tfMotorcycleMonthFee" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Car, small truck Month Fee" GridPane.rowIndex="3" />
+            <TextField fx:id="tfOtherMonthFee" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="lbNotice" prefHeight="18.0" prefWidth="259.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="btClose" layoutX="348.0" layoutY="229.0" mnemonicParsing="false" onAction="#btCloseAction" prefHeight="30.0" prefWidth="80.0" text="Close" textFill="RED" />
+      <Button fx:id="btChange" layoutX="198.0" layoutY="229.0" mnemonicParsing="false" onAction="#btChangeAction" prefHeight="30.0" prefWidth="80.0" text="Change" />
+   </children>
+</AnchorPane>

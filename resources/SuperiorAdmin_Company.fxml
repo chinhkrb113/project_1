@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.pms.view.sadmin.ViewCompanyForm">
+   <children>
+      <TableView fx:id="companyTable" layoutX="16.0" layoutY="88.0" onMouseClicked="#companyTableActionMouseClicked" prefHeight="275.0" prefWidth="737.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="44.800048828125" text="ID" />
+          <TableColumn fx:id="col_name" prefWidth="200.80000686645508" text="Name" />
+            <TableColumn fx:id="col_address" prefWidth="340.0" text="Address" />
+            <TableColumn fx:id="col_phone" prefWidth="141.60003662109375" text="Phone" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfSearch" layoutX="16.0" layoutY="51.0" prefHeight="26.0" prefWidth="177.0" promptText="Type anything to search" />
+      <Button fx:id="btBack" layoutX="16.0" layoutY="12.0" mnemonicParsing="false" onAction="#btBackAction" prefHeight="30.0" prefWidth="80.0" text="Back" />
+      <Button fx:id="btAdd" layoutX="114.0" layoutY="12.0" mnemonicParsing="false" onAction="#btAddAction" prefHeight="30.0" prefWidth="80.0" text="ADD">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btLogout" layoutX="674.0" layoutY="12.0" mnemonicParsing="false" onAction="#btLogoutAction" prefHeight="30.0" prefWidth="80.0" text="Logout" textFill="RED" />
+      <Label layoutX="323.0" layoutY="16.0" text="COMPANY's List">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

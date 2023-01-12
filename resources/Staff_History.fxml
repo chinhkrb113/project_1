@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.pms.view.staff.HistoryForm">
+   <children>
+      <Label layoutX="396.0" layoutY="25.0" text="History of Parking">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="40.0" layoutY="72.0" prefHeight="30.0" prefWidth="867.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.20001220703125" minWidth="10.0" prefWidth="12.599991607666013" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="376.40000610351564" minWidth="10.0" prefWidth="355.800008392334" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="482.4000122070312" minWidth="0.0" prefWidth="49.99997558593748" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="482.4000122070312" minWidth="10.0" prefWidth="76.60001220703128" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="482.4000122070312" minWidth="10.0" prefWidth="183.79998779296875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="519.6000366210938" minWidth="10.0" prefWidth="16.800012207031273" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="519.6000366210938" minWidth="10.0" prefWidth="175.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="tfSearch" prefHeight="26.0" prefWidth="346.0" promptText="Type to search" GridPane.columnIndex="1" />
+            <Label text="Date from" GridPane.columnIndex="3" />
+            <DatePicker fx:id="startDate" prefHeight="26.0" prefWidth="175.0" GridPane.columnIndex="4" />
+            <DatePicker fx:id="endDate" prefHeight="26.0" prefWidth="165.0" GridPane.columnIndex="6" />
+            <Label text="to" GridPane.columnIndex="5" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tbHistory" layoutX="37.0" layoutY="166.0" onMouseClicked="#tbHistoryMouseAction" prefHeight="335.0" prefWidth="867.0">
+        <columns>
+          <TableColumn fx:id="col_id" prefWidth="19.999969482421875" text="ID" />
+          <TableColumn fx:id="col_npin" prefWidth="135.20000839233398" text="NP In" />
+            <TableColumn fx:id="col_npout" prefWidth="130.3999481201172" text="NP Out" />
+            <TableColumn fx:id="col_timein" prefWidth="134.39996337890625" text="Time In" />
+            <TableColumn fx:id="col_timeout" prefWidth="127.20001220703125" text="Time Out" />
+            <TableColumn fx:id="col_visitstatus" prefWidth="28.0" text="VS" />
+            <TableColumn fx:id="col_fee" prefWidth="120.7999267578125" text="Fee" />
+            <TableColumn fx:id="col_doubt" prefWidth="40.800048828125" text="Doubt" />
+            <TableColumn fx:id="col_cardid" prefWidth="128.79998779296875" text="Card ID" />
+        </columns>
+      </TableView>
+      <GridPane layoutX="460.0" layoutY="116.0" prefHeight="30.0" prefWidth="444.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="371.1999877929687" minWidth="10.0" prefWidth="167.8" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.20000000000002" minWidth="10.0" prefWidth="95.60000000000002" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="227.20000000000002" minWidth="10.0" prefWidth="94.39999999999998" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.40002441406247" minWidth="0.0" prefWidth="91.19999999999999" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btClose" mnemonicParsing="false" onAction="#btCloseAction" prefHeight="40.0" prefWidth="80.0" text="Close" textFill="RED" GridPane.columnIndex="3" />
+            <Button fx:id="btSearch" mnemonicParsing="false" onAction="#btSearchAction" prefHeight="40.0" prefWidth="80.0" text="Search" GridPane.columnIndex="1" />
+            <Label fx:id="lbNotice" prefHeight="18.0" prefWidth="191.0" />
+            <Button fx:id="btRefresh" mnemonicParsing="false" onAction="#btRefreshAction" prefHeight="40.0" prefWidth="80.0" text="Refresh" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

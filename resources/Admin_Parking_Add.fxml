@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hust.pms.view.admin.AddParkingForm">
+   <children>
+      <Label layoutX="207.0" layoutY="14.0" text="Add Parking">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="64.0" text="Name (*)" />
+      <Label layoutX="33.0" layoutY="98.0" text="Address (*)" />
+      <Label layoutX="35.0" layoutY="200.0" text="Slot (*)" />
+      <TextField fx:id="tfName" layoutX="125.0" layoutY="58.0" prefHeight="30.0" prefWidth="342.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="tfAddress" layoutX="125.0" layoutY="98.0" prefHeight="88.0" prefWidth="342.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="tfSlot" layoutX="125.0" layoutY="196.0" prefHeight="26.0" prefWidth="342.0" />
+      <Label fx:id="lbNotice" layoutX="125.0" layoutY="231.0" />
+      <Button fx:id="btClose" layoutX="387.0" layoutY="259.0" mnemonicParsing="false" onAction="#btCloseAction" prefHeight="30.0" prefWidth="80.0" text="Close" />
+      <Button fx:id="btAdd" layoutX="125.0" layoutY="259.0" mnemonicParsing="false" onAction="#btAddAction" prefHeight="30.0" prefWidth="80.0" text="Add" />
+      <Button fx:id="btClear" layoutX="260.0" layoutY="259.0" mnemonicParsing="false" onAction="#btClearAction" prefHeight="30.0" prefWidth="80.0" text="Clear" />
+   </children>
+</AnchorPane>
