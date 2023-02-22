@@ -231,7 +231,7 @@ public class StaffCenterForm implements Initializable, LabelHelper {
 		initRadioButton();
 		
 		CameraController camc = new CameraController();
-//		ObservableList<WebcamInfo> options = FXCollections.observableArrayList(camc.getWebcam());
+		ObservableList<WebcamInfo> options = FXCollections.observableArrayList(camc.getWebcam());
     	/*
 		int webcamCounter = 0;
     	for (Webcam webcam:Webcam.getWebcams()) {
@@ -243,7 +243,7 @@ public class StaffCenterForm implements Initializable, LabelHelper {
     	}
     	*/
 		
-//    	cbCameraOptions1.setItems(options);
+    	cbCameraOptions1.setItems(options);
     	cbCameraOptions1.setPromptText("Please choose camera1");
     	cbCameraOptions1.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<WebcamInfo>() {
 
